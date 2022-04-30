@@ -1,7 +1,25 @@
-import React from "react";
+import { useState, useEffect } from "react";
+
+import { useDispatch } from "react-redux";
+import { changeSearcher } from "../redux/notes/notesSlice";
 
 function Search() {
-  return <div>Search</div>;
+  const [searcher, setSearcher] = useState("");
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(changeSearcher(searcher));
+  }, [searcher]);
+
+  return (
+    <div>
+      <input
+        className="search"
+        onChange={(e) => setSearcher(e.target.value)}
+        placeholder="Search..."
+      />
+    </div>
+  );
 }
 
 export default Search;

@@ -4,4 +4,4 @@ function Header() {
   return <h2 className="Header">NotesApp</h2>;
 }
 
-export default Header;
+export default React.memo(Header);

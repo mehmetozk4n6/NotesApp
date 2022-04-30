@@ -12,6 +12,11 @@
 .Header {
   color: #808080;
 }
+.search {
+  width: 40%;
+  border-radius: 12px;
+  padding: 5px;
+}
 .Form {
   background-color: #fff;
   padding: 10px;
@@ -29,6 +34,7 @@
   border: none;
   box-sizing: border-box;
   width: 100%;
+  font-size: 15px;
 }
 #colorPicker {
   display: flex;
@@ -55,8 +61,12 @@
   margin-top: 20px;
   text-align: left;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .noteList > span {
   padding: 10px;
   margin: 5px;
+  font-size: 15px;
+  width: 29%;
 }
