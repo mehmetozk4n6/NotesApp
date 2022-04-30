@@ -1,3 +1,5 @@
+netlify : https://master--keen-sunflower-7dcc95.netlify.app/
+
 # Ödev 1
 
 Genel bir not uygulaması geliştirmeniz gerekiyor.
