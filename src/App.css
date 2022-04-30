@@ -65,11 +65,11 @@
   text-align: left;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .noteList > span {
   padding: 10px;
-  margin: 5px;
+  margin: 0.4em;
   font-size: 1.4em;
   width: 29%;
 }
