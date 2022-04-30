@@ -1,12 +1,10 @@
-import React from "react";
-
 import { useSelector } from "react-redux";
 
 function NoteList() {
   const items = useSelector((state) => state.notes.items);
   const searcher = useSelector((state) => state.notes.searcher);
 
-  const filteredItems = searcher
+  let filteredItems = searcher
     ? items.filter((item) => item.note.includes(searcher))
     : items;
 
