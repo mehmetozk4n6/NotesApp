@@ -9,7 +9,7 @@ function Search() {
 
   useEffect(() => {
     dispatch(changeSearcher(searcher));
-  }, [searcher]);
+  }, [dispatch]);
 
   return (
     <div>
